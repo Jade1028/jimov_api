@@ -22,4 +22,13 @@ r.get("/", (_req, res) => {
   });
 });
 
+r.get("/health", (_req, res) => {
+  res.status(200).json({
+    status: "OK",
+    message: "JIMOV API is running fine 🚀",
+    uptime: process.uptime(),
+    timestamp: new Date().toISOString(),
+  });
+});
+
 export default r;
