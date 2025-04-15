@@ -8,11 +8,11 @@ WORKDIR /anime
 
 RUN npm i 
 
-
+COPY . .
 
 WORKDIR /anime/src/
 
-CMD [ "ts-node", "index.ts" ]
+CMD [ "npx", "ts-node", "index.ts" ]
 
 
 
