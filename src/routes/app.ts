@@ -5,7 +5,7 @@ const r = Router();
 //raiz
 r.get("/", (_req, res) => {
   res.send({
-    message: "Jimov API is up and running 🎬🎉🎉",
+    message: "Welcome to the Jimov API! 🚀",
     status: "success",
     code: 200,
     additional_info: {
