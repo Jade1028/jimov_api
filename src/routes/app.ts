@@ -9,7 +9,7 @@ r.get("/", (_req, res) => {
   const uptimeInSeconds = Math.floor((currentTime.getTime() - startTime.getTime()) / 1000);
 
   res.send({
-    message: "Jimov API is up and running 🎬🎉🎉",
+    message: "Welcome to the Jimov API! 🚀",
     status: "success",
     code: 200,
     version: "1.0.0",
